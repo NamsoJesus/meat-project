@@ -1,9 +1,8 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
-import logo from "../public/logo.svg";
+
 import { HeroComponent } from '@/components/HeroComponent';
+import { GalleryMain } from '@/components/GalleryMain';
+import { ContactMain } from '@/components/ContactMain';
 
 
 export default function Home() {
@@ -17,6 +16,8 @@ export default function Home() {
       </Head>
       <main>
       <HeroComponent/>
+      <GalleryMain/>
+      <ContactMain/>
       </main>
     </>
   )
