@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "../styles/CardProduct.module.css";
-
+import Image from "next/image";
 export const CardProduct = ({product}) => {
     const { image, title, content, url } = product;
     return (
