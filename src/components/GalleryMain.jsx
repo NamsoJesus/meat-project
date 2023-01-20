@@ -15,7 +15,7 @@ export const GalleryMain = () => {
 
     const handleFilter = (e) => {
         setFilterSelected(e.target.value);
-        updateFilterProducts(products, e.target.value);
+        updateFilteredProducts(products, e.target.value);
     }
 
     
