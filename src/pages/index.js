@@ -2,8 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
+import logo from "../public/logo.svg";
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -15,7 +15,32 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
    <main>
-     <h1>hello world</h1>
+     <section>
+       <nav>
+         <div>
+           <Link>
+              <Image src={logo} alt="logo" quality={100}/>
+           </Link>
+           <ul>
+             <li>
+             <Link>
+              <Image src={bgLogo} alt="fb" quality={100}/>
+           </Link>
+             </li>
+             <li>
+             <Link>
+              <Image src={igLogo} alt="ig" quality={100}/>
+           </Link>
+             </li>
+             <li>
+             <Link>
+              <Image src={ytLogo} alt="yt" quality={100}/>
+           </Link>
+             </li>
+           </ul>
+         </div>
+       </nav>
+     </section>
    </main>
     </>
   )

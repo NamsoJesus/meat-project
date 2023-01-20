@@ -1,0 +1,17 @@
+.nav {
+    position: absolute;
+    right: 0;
+    left: 0;
+    padding: 16px 0;
+    background-color: transparent;
+    z-index: 1000;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.navLinkFacebook, .navLinkInstagram, .navLinkYoutube {
+    display: inline-flex;
+}
+.navListItemFacebook {
+    position: relative
+}
+
