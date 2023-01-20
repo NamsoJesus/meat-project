@@ -1,8 +1,9 @@
 import Head from 'next/head'
 
 import { HeroComponent } from '@/components/HeroComponent';
-import { GalleryMain } from '@/components/GalleryMain';
+
 import { ContactMain } from '@/components/ContactMain';
+import { GalleryMain } from '../components/GalleryMain';
 
 
 export default function Home() {
@@ -23,7 +24,7 @@ export default function Home() {
       </Head>
       <main>
       <HeroComponent/>
-      <GalleryMain/>
+    <GalleryMain/>
       <ContactMain/>
       </main>
     </>
