@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import logo from "../public/logo.svg";
+import { HeroComponent } from '@/components/HeroComponent';
 
 
 export default function Home() {
@@ -15,35 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <section>
-          <nav className={`${styles.nav}`}>
-            <div className="container">
-              <div className={`${styles.content}`}>
-                <Link href="/" className={`${styles.navLinkLogo}`}>
-                  <Image src={logo} alt="logo" quality={100} />
-                </Link>
-                <ul className={`${styles.navList}`}>
-                  <li className={`${styles.navListItemFacebook}`}>
-                    <Link className={`${styles.navListFacebook}`}>
-                      <Image src={bgLogo} alt="fb" quality={100} />
-                    </Link>
-                  </li>
-                  <li className={`${styles.navListItemInstagram}`}>
-                    <Link className={`${styles.navLinkInstagram}`}>
-                      <Image src={igLogo} alt="ig" quality={100} />
-                    </Link>
-                  </li>
-                  <li className={`${styles.navListItemYoutube}`}>
-                    <Link   className={`${styles.navLinkYoutube}`}>
-                      <Image src={ytLogo} alt="yt" quality={100} />
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-          </nav>
-        </section>
+      <HeroComponent/>
       </main>
     </>
   )
