@@ -14,34 +14,37 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-   <main>
-     <section>
-       <nav>
-         <div>
-           <Link>
-              <Image src={logo} alt="logo" quality={100}/>
-           </Link>
-           <ul>
-             <li>
-             <Link>
-              <Image src={bgLogo} alt="fb" quality={100}/>
-           </Link>
-             </li>
-             <li>
-             <Link>
-              <Image src={igLogo} alt="ig" quality={100}/>
-           </Link>
-             </li>
-             <li>
-             <Link>
-              <Image src={ytLogo} alt="yt" quality={100}/>
-           </Link>
-             </li>
-           </ul>
-         </div>
-       </nav>
-     </section>
-   </main>
+      <main>
+        <section>
+          <nav className={`${styles.nav}`}>
+            <div className="container">
+              <div className={`${styles.content}`}>
+                <Link href="/" className={`${styles.navLinkLogo}`}>
+                  <Image src={logo} alt="logo" quality={100} />
+                </Link>
+                <ul className={`${styles.navList}`}>
+                  <li className={`${styles.navListItemFacebook}`}>
+                    <Link className={`${styles.navListFacebook}`}>
+                      <Image src={bgLogo} alt="fb" quality={100} />
+                    </Link>
+                  </li>
+                  <li className={`${styles.navListItemInstagram}`}>
+                    <Link className={`${styles.navLinkInstagram}`}>
+                      <Image src={igLogo} alt="ig" quality={100} />
+                    </Link>
+                  </li>
+                  <li className={`${styles.navListItemYoutube}`}>
+                    <Link   className={`${styles.navLinkYoutube}`}>
+                      <Image src={ytLogo} alt="yt" quality={100} />
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </nav>
+        </section>
+      </main>
     </>
   )
 }
