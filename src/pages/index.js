@@ -1,8 +1,8 @@
 import Head from 'next/head'
 
-import { HeroComponent } from '@/components/HeroComponent';
+import { HeroComponent } from 'src/components/HeroComponent';
 
-import { ContactMain } from '@/components/ContactMain';
+import { ContactMain } from 'src/components/ContactMain';
 import { GalleryMain } from '../components/GalleryMain';
 
 

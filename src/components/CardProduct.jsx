@@ -16,7 +16,7 @@ export const CardProduct = ({product}) => {
         </div>
         <div className={styles.content}>
           <h3 className={styles.title}>
-            <a href={url} target="_blank" >
+            <a href={url} target="_blank"  rel="noopener noreferrer">
               {title}
             </a>
           </h3>
@@ -24,7 +24,7 @@ export const CardProduct = ({product}) => {
           <a
             href={url}
             target="_blank"
-          
+            rel="noopener noreferrer"
             className={styles.link}
           >
             Ver más
