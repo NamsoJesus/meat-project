@@ -1,4 +1,10 @@
-import React from 'react';
+import Link from "next/link";
+import Image from "next/image";
+import styles from "../styles/Navbar.module.css";
+import logo from "../../public/logo.svg";
+import fbLogo from "../../public/facebook.svg";
+import igLogo from "../../public/instagram.svg";
+import ytLogo from "../../public/youtube.svg";
 
 export const Navbar = () => {
     return (
@@ -10,17 +16,17 @@ export const Navbar = () => {
             </Link>
             <ul className={`${styles.navList}`}>
               <li className={`${styles.navListItemFacebook}`}>
-                <Link className={`${styles.navListFacebook}`}>
-                  <Image src={bgLogo} alt="fb" quality={100} />
+                <Link href="/" className={`${styles.navListFacebook}`}>
+                  <Image src={fbLogo} alt="fb" quality={100} />
                 </Link>
               </li>
               <li className={`${styles.navListItemInstagram}`}>
-                <Link className={`${styles.navLinkInstagram}`}>
+                <Link href="/" className={`${styles.navLinkInstagram}`}>
                   <Image src={igLogo} alt="ig" quality={100} />
                 </Link>
               </li>
               <li className={`${styles.navListItemYoutube}`}>
-                <Link   className={`${styles.navLinkYoutube}`}>
+                <Link href="/" className={`${styles.navLinkYoutube}`}>
                   <Image src={ytLogo} alt="yt" quality={100} />
                 </Link>
               </li>

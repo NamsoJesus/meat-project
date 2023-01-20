@@ -1,6 +1,6 @@
 import Image from "next/image";
-import brush from "../public/brush.svg";
-import heroImage from "../public/hero.png";
+import brush from "../../public/brush.svg";
+import heroImage from "../../public/hero.png";
 import styles from "../styles/HeroImage.module.css";
 import { Navbar } from "./Navbar";
 

@@ -1,16 +1,18 @@
 import React from 'react';
+import styles from "../styles/CardProduct.module.css";
 
-export const CardProduct = () => {
+export const CardProduct = ({product}) => {
+    const { image, title, content, url } = product;
     return (
         <article className={styles.card}>
         <div className={styles.picture}>
-          <Image
+          {/* <Image
             src={image}
             alt={title}
             width={270}
             height={204}
             className={styles.image}
-          />
+          /> */}
         </div>
         <div className={styles.content}>
           <h3 className={styles.title}>

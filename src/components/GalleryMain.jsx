@@ -1,5 +1,10 @@
-import React from 'react';
-import { CardProduct } from './CardProduct';
+import axios from "axios";
+import Image from "next/image";
+import { useEffect, useState } from "react";
+import arrow from "../../public/arrow.svg";
+import brushTwo from "../../public/brush-2.svg";
+import styles from "../styles/GalleryMain.module.css";
+import { CardProduct } from "./CardProduct";
 
 export const GalleryMain = () => {
 

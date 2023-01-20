@@ -2,7 +2,7 @@ import { useForm } from "../hooks/useForm";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Image from "next/image";
-import brushTwo from "../public/brush-2.svg";
+import brushTwo from "../../public/brush-2.svg";
 import styles from "../styles/ContactMain.module.css";
 
 export const ContactMain = () => {
